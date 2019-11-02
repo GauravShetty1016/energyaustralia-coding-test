@@ -1,0 +1,21 @@
+<ul id="record-labels-list">
+  {{#each recordLabels}}
+  <li class="record-label-entry">
+    <div class="name">{{name}}</div>
+    <ul class="bands-list">
+      {{#each bands}}
+      <li class="band-entry">
+        <div class="name">{{name}}</div>
+        <ul class="festivals-list">
+          {{#each festivals}}
+          <li class="festival-entry">
+            <div class="name">{{this}}</div>
+          </li>
+          {{/each}}
+        </ul>
+      </li>
+      {{/each}}
+    </ul>
+  </li>
+  {{/each}}
+</ul>
