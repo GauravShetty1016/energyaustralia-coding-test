@@ -10,7 +10,6 @@ async function renderTreeView(rootElement) {
     rootElement.innerHTML = errorView(recordLabelData.error);
     return;
   }
-  console.log(recordLabelData);
   rootElement.innerHTML = treeView({ recordLabels: recordLabelData });
 }
 

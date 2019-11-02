@@ -5,6 +5,9 @@ const getSortedRecordsFromFestivals = (festivals, order = "asc") => {
   let recordLabels = {};
   let bands = {};
   let recordData = [];
+
+  if (_.isEmpty(festivals)) return;
+
   _.forEach(festivals, festival => {
     _.forEach(festival.bands, band => {
       const label = _.isEmpty(band.recordLabel) ? "No Record Label" : band.recordLabel.trim();
