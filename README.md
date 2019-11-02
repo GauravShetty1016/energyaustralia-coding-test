@@ -10,10 +10,13 @@ Solved the question by creating a JS project and calling the API via AJAX.
 - Babel (polyfill)
 - Axios (Ajax)
 - ESLint (style)
+- Mocha (Testing)
+- Chai (Assertions)
+- Moxios (Axios Mocks)
 
 ### TBD:
 
-Mocha and Chai have been added but tests need to be done.
+Some basic tests have been added but the suite needs to be expanded.
 
 ### How to run project:
 

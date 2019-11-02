@@ -1,4 +1,7 @@
 <ul id="record-labels-list">
+  {{#if emptyList}}
+  <div class="empty-list">The list is empty</div>
+  {{else}}
   {{#each recordLabels}}
   <li class="record-label-entry">
     <div class="name">{{name}}</div>
@@ -18,4 +21,5 @@
     </ul>
   </li>
   {{/each}}
+  {{/if}}
 </ul>
